@@ -5,7 +5,7 @@
 #define MAX 2
 /*pretendo fazer um deleta telefone e um deleta e-mail!
 Ainda falta fazer o deleta contato, o reorganiza agenda,
-o organiza agenda, o lista contato, insere e-mail e o reseta agenda!*/
+e o reseta agenda!*/
 
 typedef struct _strcol{
 
@@ -83,7 +83,7 @@ void inicia_agenda(void){
 
     if (agenda == NULL){
 
-        printf("\nMemÛria insuficiente");
+        printf("\nMem√≥ria insuficiente");
     }
 }
 
@@ -129,11 +129,11 @@ void insere_telefone(void){
 
     char c;
 
-    agenda[nContatos]->tel.string = (char *)malloc(BLOCK * sizeof(char)); //optei por fazer o malloc para que um ˙nico contato
-    agenda[nContatos]->tel.numBlocos = 1;                                     //possa ter n n˙meros telefÙnicos
+    agenda[nContatos]->tel.string = (char *)malloc(BLOCK * sizeof(char)); //optei por fazer o malloc para que um √∫nico contato
+    agenda[nContatos]->tel.numBlocos = 1;                                     //possa ter n n√∫meros telef√¥nicos
 
     if (agenda[nContatos]->tel.string = NULL){
-        printf("\nMemÛria Insuficiente!");
+        printf("\nMem√≥ria Insuficiente!");
     }
 
     for(;;){
@@ -146,7 +146,7 @@ void insere_telefone(void){
 
             if(agenda[nContatos]->tel.numBlocos >= MAX){
 
-                    printf("\nTelefone est· cheio!");
+                    printf("\nTelefone est√° cheio!");
                     return;
             }
 
@@ -166,11 +166,11 @@ void insere_email(void){
 
     char c;
 
-    agenda[nContatos]->email.string = (char *)malloc(BLOCK * sizeof(char)); //optei por fazer o malloc para que um ˙nico contato
-    agenda[nContatos]->email.numBlocos = 1;                                     //possa ter n n˙meros telefÙnicos
+    agenda[nContatos]->email.string = (char *)malloc(BLOCK * sizeof(char)); //optei por fazer o malloc para que um √∫nico contato
+    agenda[nContatos]->email.numBlocos = 1;                                     //possa ter n n√∫meros telef√¥nicos
 
     if (agenda[nContatos]->email.string = NULL){
-        printf("\nMemÛria Insuficiente!");
+        printf("\nMem√≥ria Insuficiente!");
     }
 
     for(;;){
@@ -183,7 +183,7 @@ void insere_email(void){
 
             if(agenda[nContatos]->email.numBlocos >= MAX){
 
-                    printf("\nTelefone est· cheio!");
+                    printf("\nTelefone est√° cheio!");
                     return;
             }
 
